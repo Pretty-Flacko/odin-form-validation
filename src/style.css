@@ -19,6 +19,16 @@ input:invalid {
 input:valid {
 	border: 2px solid #2e7d32;
 }
+.error {
+	font-size: 0.8rem;
+	color: white;
+	background-color: #b00020;
+	padding: 0;
+	overflow: hidden;
+}
+.error.active {
+	padding: 0.3rem;
+}
 button {
 	margin-top: 1rem;
 }
