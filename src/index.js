@@ -14,6 +14,25 @@ inputs.forEach((input) => {
 	input.addEventListener("input", () => validateField(input));
 });
 
+form.addEventListener("submit", (event) => {
+	event.preventDefault();
+
+	let hasErrors = false;
+
+	inputs.forEach((input) => {
+		if (!validateField(input)) {
+			hasErrors = true;
+		}
+	});
+
+	if (hasErrors) {
+		alert("Fix the errors before submitting!");
+	} else {
+		alert("Form submitted successfully.");
+		form.reset();
+	}
+});
+
 function validateField(input) {
 	const error = input.nextElementSibling;
 
