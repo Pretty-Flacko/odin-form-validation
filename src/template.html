@@ -3,7 +3,36 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Form</title>
 	</head>
-	<body></body>
+	<body>
+		<form novalidate>
+			<div class="input-group">
+				<label for="email">Email:</label>
+				<input type="email" id="email" required/>
+				<span class="error"></span>
+			</div>
+			<div class="input-group">
+				<label for="country">Country:</label>
+				<input type="text" id="country" required/>
+				<span class="error"></span>
+			</div>
+			<div class="input-group">
+				<label for="postal-code">Postal Code:</label>
+				<input type="text" id="postal-code" required/>
+				<span class="error"></span>
+			</div>
+			<div class="input-group">
+				<label for="password">Password:</label>
+				<input type="password" id="password" required/>
+				<span class="error"></span>
+			</div>
+			<div class="input-group">
+				<label for="password-cnfrm">Confirm password:</label>
+				<input type="password" id="password-cnfrm" required/>
+				<span class="error"></span>
+			</div>
+			<button type="submit">Submit</button>
+		</form>
+	</body>
 </html>
